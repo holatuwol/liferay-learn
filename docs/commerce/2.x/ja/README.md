@@ -1,68 +1,67 @@
-# Commerce
+# コマース
 
-Welcome to Liferay Commerce!  Liferay Commerce is a digital commerce platform built from the ground up to meet the challenging and complex needs of any B2B organization. Using the enterprise foundation of Liferay DXP, Liferay Commerce has the power and flexibility of fully integrated web content management and industry leading portal capabilities. To learn more about Liferay DXP see this [article](https://help.liferay.com/hc/en-us/articles/360028818552-Introduction-to-The-Liferay-Distinction).
+Liferay Commerce \へようこそ！ Liferay Commerceは、あらゆるB2B組織の困難かつ複雑なニーズを満たすためにゼロから構築されたデジタルコマースプラットフォームです。 Liferay DXPのエンタープライズ基盤を使用するLiferay Commerceは、完全に統合されたWebコンテンツ管理と業界をリードするポータル機能の能力と柔軟性を備えています。 Liferay DXPの詳細は、この [記事](https://help.liferay.com/hc/en-us/articles/360028818552-Introduction-to-The-Liferay-Distinction)参照してください。
 
-## Overview
+## 概要
 
-* [Modern Storefront Pages and Content Management](#modern-storefront-pages-and-content-management)
-* [Multi-Channel Catalog and Product Information Management](#multi-channel-catalog-and-product-information-management)
-* [B2B Focused Account Management and Purchasing Workflow](#b2b-focused-account-management-and-purchasing-workflow)
-* [Order Management and Sales](#order-management-and-sales)
-* [ML Powered Recommendations and Alerts](#ml-powered-recommendations-and-alerts)
-* [APIs and Integrations](#apis-and-integrations)
-* [Next Steps](#next-steps)
+  - [最新のストアフロントページとコンテンツ管理](#modern-storefront-pages-and-content-management)
+  - [マルチチャネルカタログおよび製品情報管理](#multi-channel-catalog-and-product-information-management)
+  - [B2B集中アカウント管理および購買ワークフロー](#b2b-focused-account-management-and-purchasing-workflow)
+  - [注文管理と販売](#order-management-and-sales)
+  - [MLによる推奨事項とアラート](#ml-powered-recommendations-and-alerts)
+  - [APIと統合](#apis-and-integrations)
+  - [次のステップ](#next-steps)
 
-Just want to get started? Launch Liferay Commerce _fast_ [using the Liferay Commerce Docker image](./installation-and-upgrades/installation-guide/using-the-liferay-commerce-docker-image.md).
+開始する準備は整いましたか？ [Liferay Commerce Dockerイメージ](./installation-and-upgrades/installation-guide/using-the-liferay-commerce-docker-image.md)を使用してLiferay Commerce *素早く*起動できます。
 
-## Modern Storefront Pages and Content Management
+## 最新のストアフロントページとコンテンツ管理
 
-Liferay Commerce includes a wide range of tools for setting up a storefront. New search tools, for instance, are designed specifically for product catalogs, while customizable widgets make it easy to add common UI elements—such as Checkout and View Cart—to a page. Learn more about [Building a Storefront](./creating-store-content/creating-your-storefront.md).
+Liferay Commerceには、店頭をセットアップするための幅広いツールが含まれています。 たとえば、新しい検索ツールは製品カタログ専用に設計されていますが、カスタマイズ可能なウィジェットを使用すると、CheckoutやView Cartなどの一般的なUI要素をページに簡単に追加できます。 [ストアフロントの構築](./creating-store-content/creating-your-storefront.md)についての詳細はこちら。
 
-![Liferay Commerce Dashboard](./introduction-to-liferay-commerce/images/01.png)
+![Liferay Commerceダッシュボード](./introduction-to-liferay-commerce/images/01.png)
 
-## Multi-Channel Catalog and Product Information Management
+## マルチチャネルカタログおよび製品情報管理
 
-Liferay Commerce contains a catalog management system that supports a variety of [product types](./managing-a-catalog/introduction-to-product-types.md) and stores a wide range of product data. [Product options](./managing-a-catalog/customizing-your-product-with-product-options.md), [pricing](./managing-a-catalog/introduction-to-product-pricing-methods.md), [images](./managing-a-catalog/product-images.md), and [specifications](./managing-a-catalog/specifications.md) are a few examples. Products are then readily available to a distribution channel of choice.
+Liferay Commerceには、さまざまな [製品タイプ](./managing-a-catalog/introduction-to-product-types.md) をサポートし、幅広い製品データを保存するカタログ管理システムが含まれています。 [製品オプション](./managing-a-catalog/customizing-your-product-with-product-options.md)、 [価格](./managing-a-catalog/introduction-to-product-pricing-methods.md)、 [画像](./managing-a-catalog/product-images.md)、および [仕様](./managing-a-catalog/specifications.md)がいくつかの例です。 製品は、選択した流通チャネルですぐに利用できます。
 
-![Product catalog](./introduction-to-liferay-commerce/images/02.png)
+![製品カタログ](./introduction-to-liferay-commerce/images/02.png)
 
-[Channels](./managing-a-catalog/introduction-to-channels.md) connect catalogs and products to any place products are sold: a Liferay Commerce based storefront, third party marketplaces, or even back office phone sales.
+[チャネル](./managing-a-catalog/introduction-to-channels.md) は、カタログと製品を、Liferay Commerceベースのストアフロント、サードパーティのマーケットプレイス、またはバックオフィスの電話販売など、販売される任意の場所に接続します。
 
-![Channels enabled for a product](./introduction-to-liferay-commerce/images/03.png)
+![製品で有効になっているチャネル](./introduction-to-liferay-commerce/images/03.png)
 
-[Categories](./managing-a-catalog/organizing-your-catalog-with-product-categories.md) and [Product Relationships](./managing-a-catalog/related-products-up-sells-and-cross-sells.md) simplify store navigation and increase revenue generating opportunities.
+[カテゴリ](./managing-a-catalog/organizing-your-catalog-with-product-categories.md) および [製品の関係](./managing-a-catalog/related-products-up-sells-and-cross-sells.md) 店舗のナビゲーションを簡素化し、収益を生み出す機会を増やします。
 
-![Product details and related products](./introduction-to-liferay-commerce/images/04.png)
+![製品の詳細と関連製品](./introduction-to-liferay-commerce/images/04.png)
 
-Managing product pricing is flexible through the use of [Price Lists](./managing-a-catalog/creating-a-price-list.md) and [Tiered Pricing](./managing-a-catalog/adding-tiered-pricing.md) - all of which can be tailored to meet unique customer needs.
+製品価格の管理は、 [価格表](./managing-a-catalog/creating-a-price-list.md) および [段階的価格設定](./managing-a-catalog/adding-tiered-pricing.md) 使用することにより柔軟です。これらはすべて、お客様固有のニーズに合わせて調整できます。
 
-## B2B Focused Account Management and Purchasing Workflow
+## B2B集中アカウント管理および購買ワークフロー
 
-Liferay Commerce is optimized for business-to-business transactions with features designed to address B2B needs. [Accounts](./account-management/introduction-to-accounts.md), [Account Groups](./account-management/creating-a-new-account-group.md), and [Account Roles](./account-management/account-roles.md) work together to ensure that customer needs are met with tailored experiences, self-service, and purchasing workflows.
+Liferay Commerceは、B2Bのニーズに対応するよう設計された機能により、企業間取引向けに最適化されています。 [アカウント](./account-management/introduction-to-accounts.md)、 [アカウントグループ](./account-management/creating-a-new-account-group.md)、および [アカウントロール](./account-management/account-roles.md)が連携し、顧客のニーズに合ったエクスペリエンス、セルフサービス、および購入ワークフローを提供します。
 
-![User role selection](./introduction-to-liferay-commerce/images/05.png)
+![ユーザー役割の選択](./introduction-to-liferay-commerce/images/05.png)
 
-## Order Management and Sales
+## 注文管理と販売
 
-Liferay Commerce offers Order Management that enables buyers and sellers to prepare, place, approve, transmit, and fulfill orders.
+Liferay Commerceは、買い手と売り手が注文を準備、配置、承認、送信、および履行できるようにする注文管理を提供します。
 
-Payments for orders may be completed with several different [payment methods](./starting-a-store/managing-payment-methods.md) available out-of-the-box. Integration with more payment processors may be accomplished with additional customization.
+注文の支払いは、初期設定から利用可能ないくつかの異なる [支払い方法](./starting-a-store/managing-payment-methods.md)で完了できます。 追加のカスタマイズにより、より多くの支払い処理プログラムとの統合を実現できます。
 
-![Payment Methods page](./introduction-to-liferay-commerce/images/06.png)
+![支払方法ページ](./introduction-to-liferay-commerce/images/06.png)
 
-Orders may be fulfilled using several different [shipping methods](./orders-and-fulfillment/shipping-method-reference.md):
-sellers can [impose a flat rate](./orders-and-fulfillment/using-the-flat-rate-shipping-method.md), apply [shipping method restrictions](./orders-and-fulfillment/applying-shipping-method-restrictions.md), or integrate with the [carrier rates like FedEx](./orders-and-fulfillment/using-the-fedex-shipping-method.md).
+注文は、いくつかの異なる [配送方法](./orders-and-fulfillment/shipping-method-reference.md)を使用して履行されます。売り手 [は定額料金](./orders-and-fulfillment/using-the-flat-rate-shipping-method.md)を適用 [配送方法制限](./orders-and-fulfillment/applying-shipping-method-restrictions.md)適用、または[FedExなどの配送料金](./orders-and-fulfillment/using-fedex-as-a-carrier-method.md)と統合できます。
 
-## ML Powered Recommendations and Alerts
+## MLによる推奨事項とアラート
 
-Liferay Commerce applies machine learning and predictive analytics to enable suggested product groups, order forecasting down to the product level, smart loyalty score alerts, and personalized product recommendations.
+Liferay Commerceは、機械学習と予測分析を適用して、推奨製品グループ、製品レベルまでの注文予測、スマートロイヤルティスコアアラート、およびパーソナライズされた製品の推奨を有効にします。
 
-## APIs and Integrations
+## APIと統合
 
-Integrate with other business systems through a Mulesoft connector, Talend component, or using pre-built connectors for Salesforce, SAP ERP (_Coming Soon_), or MS Dynamics NAV (_Coming Soon_).
+Mulesoftコネクター、Talendコンポーネント、またはSalesforce、SAP ERP（*Coming Soon*）、またはMS Dynamics NAV（*Coming Soon*）用の事前作成コネクターを使用して、他のビジネスシステムと統合します。
 
-## Next Steps
+## 次のステップ
 
-* [Installation Overview](./installation-and-upgrades/installation-guide/installation-overview.md)
-* [Using the Liferay Commerce Docker Image](./installation-and-upgrades/installation-guide/using-the-liferay-commerce-docker-image.md)
-* [Setup a Complete B2B Site Using the Minium Accelerator](./starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)
+  - [インストールの概要](./installation-and-upgrades/installation-guide/installation-overview.md)
+  - [Liferay Commerce Dockerイメージの使用](./installation-and-upgrades/installation-guide/using-the-liferay-commerce-docker-image.md)
+  - [Minium Acceleratorを使用して完全なB2Bサイトをセットアップ](./starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)
