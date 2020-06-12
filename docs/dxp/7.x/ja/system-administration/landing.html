@@ -1,0 +1,100 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Installing and Managing Apps',
+					sectionURL: 'system-administration/installing_and_managing_apps.html',
+					subsections: [
+						{
+							name: 'Introduction to Managing Apps',
+							url: 'system-administration/installing-and-managing-apps/introduction-to-managing-apps.html'
+						},
+						{
+							name: 'Installing Apps',
+							url: 'system-administration/installing-and-managing-apps/installing-and-managing-apps/installing-apps.html'
+						},
+						{
+							name: 'Using the App Manager',
+							url: 'system-administration/installing-and-managing-apps/installing-and-managing-apps/using-the-app-manager.html'
+						},
+					]
+				},
+				{
+					sectionName: 'File Storage',
+					sectionURL: 'system-administration/file_storage.html',
+					subsections: [
+						{
+							name: 'Configuring File Storage',
+							url: 'system-administration/file-storage/configuring-file-storage.html'
+						},
+						{
+							name: 'Amazon Simple Storage Service',
+							url: 'system-administration/file-storage/other-file-store-types/amazon-s3-store.html'
+						},
+						{
+							name: 'DBStore',
+							url: 'system-administration/file-storage/other-file-store-types/dbstore.html'
+						},
+					]
+        },
+				{
+					sectionName: 'Using the Script Engine',
+					sectionURL: 'system-administration/using_the_script_engine.html',
+					subsections: [
+						{
+							name: 'Using the Script Engine',
+							url: 'system-administration/using-the-script-engine/using-the-script-engine.html'
+						},
+						{
+							name: 'Running Scripts from the Script Console',
+							url: 'system-administration/using-the-script-engine/running-scripts-from-the-script-console.html'
+						},
+						{
+							name: 'Script Examples',
+							url: 'system-administration/using-the-script-engine/script-examples.html'
+						},
+					]
+        },
+				{
+					sectionName: 'Using the Server Administration Panel (Coming Soon)',
+					sectionURL: 'system-administration/using-the-server-administration-panel.html',
+        },
+				{
+					sectionName: 'Security Settings (Coming Soon)',
+					sectionURL: 'system-administration/security-settings.html',
+        },
+				{
+					sectionName: 'Virtual Instances (Coming Soon)',
+					sectionURL: 'system-administration/virtual-instances.html',
+        },
+			]
+		}
+	})
+</script>
